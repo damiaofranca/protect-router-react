@@ -1,0 +1,55 @@
+{
+    "name": "protect-router-react",
+    "license": "MIT",
+    "description": "Library for easy integration of protected pages.",
+    "author": "Damião França",
+    "main": "dist/index.umd.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "clean": "rimraf dist",
+        "build": "npm run clean && vite build & tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/damiaofranca/protect-router-react.git"
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    },
+    "keywords": [
+        "react",
+        "google-maps",
+        "handler-area",
+        "polygon",
+        "create",
+        "update"
+    ],
+    "devDependencies": {
+        "@types/crypto-js": "^4.2.2",
+        "@types/node": "^20.9.4",
+        "@types/react": "^18.0.0",
+        "axios": "^1.6.8",
+        "crypto-js": "^4.2.0",
+        "date-fns": "^3.6.0",
+        "jwt-decode": "^4.0.0",
+        "react-router-dom": "^6.22.3",
+        "rimraf": "^5.0.5",
+        "tslib": "^2.6.2",
+        "typescript": "^4.0.0",
+        "vite": "^5.1.2"
+    },
+    "dependencies": {
+        "@rollup/plugin-typescript": "^11.1.6",
+        "crypto-js": "^4.2.0",
+        "date-fns": "^3.6.0",
+        "jwt-decode": "^4.0.0",
+        "react-router-dom": "^6.22.3",
+        "rimraf": "^5.0.5",
+        "rollup-plugin-typescript-paths": "^1.5.0"
+    }
+}
